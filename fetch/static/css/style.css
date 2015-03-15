@@ -20,7 +20,7 @@ div.vertical-center {
 
 div.title {
   text-align: center;
-  background-color:rgba(20,44,44,0.3);
+  background-color:rgba(0,0,0,0.3);
   border-bottom: 1px solid rgba(20,44,44,0.4);
 }
 
@@ -30,10 +30,15 @@ div.title {
   font-size: 5em;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
+  margin-bottom: 0;
+}
+
+.title i {
+  padding-bottom: 20px;
 }
 
 div.description {
-  background-color:rgba(20,44,44,0.4);
+  background-color:rgba(0,0,0,0.4);
   padding: 5px;
   margin-top: 1%;
 }
@@ -45,6 +50,11 @@ div.description p {
   font-weight: 400;
   font-size: 14px;
 }
+
+div.description i{
+  color: #333;
+}
+
 
 div.social {
   text-align: center;
