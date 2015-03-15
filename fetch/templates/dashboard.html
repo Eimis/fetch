@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block title %}
+<title>Your dashboard - Fetch</title>
+{% endblock %}
+
+{% block content %}
+
+<div class="container top-panel-wrapper">
+  <div class="col-md-6 top-panel">
+    <div class="left-panel">
+      <img src="{% static 'images/test-image.jpg' %}" class="img-circle pull-right"></img>
+    </div>
+  </div>
+
+  <div class="col-md-6 top-panel">
+  </div>
+</div>
+
+{% endblock %}
