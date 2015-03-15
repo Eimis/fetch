@@ -1,0 +1,22 @@
+
+div.vertical-center {
+  /*bg img*/
+  background: url("/static/images/hello.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+  display: flex;
+  align-items: center;
+}
+
+div.items {
+  text-align: center;
+}
+
+.items h1 {
+  color: #cccccc;
+}
