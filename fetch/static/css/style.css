@@ -81,6 +81,8 @@ div.social p{
 }
 
 div.top-panel-wrapper {
+  width: 100%;
+  min-width: 100%;
   height: 100%;
   min-height: 100%;
 }
@@ -93,8 +95,8 @@ div.top-panel {
   -o-background-size: cover;
   background-size: cover;
 
-  height: 40%;
-  min-height: 40%;
+  height: 50%;
+  min-height: 50%;
   padding-left: 0;
 }
 
@@ -103,11 +105,46 @@ div.left-panel {
   border-right: 1px solid rgba(255,255,255,0.4);
   width: 100%;
   height: 100%;
-  display: flex;
-  align-items: center;
+  text-align: right;
+  padding: 2em;
 }
 
 div.left-panel img {
-  width: 5em;
-  padding-right: 1em;
+  width: 9em;
+}
+
+div.inner-left {
+  width: auto;
+  display: inline-block;
+}
+
+div.inner-left p.name{
+  color: white;
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+  font-size: 25px;
+  display: inline;
+  margin-left: .5em;
+}
+
+div.inner-left p.location{
+  font-weight: 100;
+  font-size: 15px;
+}
+
+div.name-surname {
+  display: inline;
+}
+
+hr.sep {
+  width: 100%;
+  margin-right: 0;
+  border-top: 1px solid rgba(255,255,255,0.4);
+}
+
+i.profile-actions {
+  color: white;
+  font-weight: 100;
+  font-size: 18px;
+  padding-top: 1em;
 }

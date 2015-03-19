@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 {% load staticfiles %}
+{% load trans from i18n %}
 
 {% block title %}
 <title>Your dashboard - Fetch</title>
@@ -8,14 +9,38 @@
 {% block content %}
 
 <div class="container top-panel-wrapper">
+
   <div class="col-md-6 top-panel">
     <div class="left-panel">
-      <img src="{% static 'images/test-image.jpg' %}" class="img-circle pull-right"></img>
+      <div class="inner-left">
+        <img src="{% static 'images/test-image.jpg' %}" class="img-circle"></img>
+        <div class="name-surname">
+          <p class="name">John Doe</p>
+          <p class="name location">Vilnius, Lithuania</p>
+        </div>
+        <hr class="sep">
+        <p>
+        <i class="fa fa-cogs fa-1x profile-actions">
+          {% trans 'Settings' %}
+        </i>
+        </p>
+        <p>
+        <i class="fa fa-line-chart fa-1x profile-actions">
+          {% trans 'Statistics' %}
+        </i>
+        </p>
+        <p>
+        <i class="fa fa-sign-out fa-1x profile-actions">
+          {% trans 'Sign out' %}
+        </i>
+        </p>
+      </div>
     </div>
   </div>
 
   <div class="col-md-6 top-panel">
   </div>
+
 </div>
 
 {% endblock %}
